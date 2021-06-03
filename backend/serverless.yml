@@ -1,0 +1,72 @@
+service: compare-backend
+
+provider:
+  name: aws
+  runtime: python3.7
+  region: us-west-1
+  timeout: 30
+  environment:
+    DB_URL: ${self:custom.database.url}
+
+functions:
+  googleAuthorizer:
+    handler: authorizer.handle
+    environment:
+      GOOGLE_CLIENT_ID: ${ssm:compare-google-client-id}
+  getWorkspaces:
+    handler: workspace_handler.get_workspaces
+    events:
+      - http:
+          path: workspaces
+          method: get
+          authorizer: googleAuthorizer
+          cors: true
+  postWorkspaces:
+    handler: workspace_handler.create_workspace
+    events:
+      - http:
+          path: workspaces
+          method: post
+          authorizer: googleAuthorizer
+          cors: true
+  getWorkspaceById:
+    handler: workspace_handler.get_workspace_by_id
+    events:
+      - http:
+          path: workspaces/{workspaceId}
+          method: get
+          authorizer: googleAuthorizer
+  patchWorkspaceById:
+    handler: workspace_handler.patch_workspace_by_id
+    events:
+      - http:
+          path: workspaces/{workspaceId}
+          method: patch
+          authorizer: googleAuthorizer
+          cors: true
+  deleteWorkspaceById:
+    handler: workspace_handler.delete_workspace_by_id
+    events:
+      - http:
+          path: workspaces/{workspaceId}
+          method: delete
+          authorizer: googleAuthorizer
+          cors: true
+  deletePIdFromWorkspaceById:
+    handler: workspace_handler.delete_pid_from_workspace_by_id
+    events:
+      - http:
+          path: workspaces/{workspaceId}/{pid}
+          method: delete
+          authorizer: googleAuthorizer
+          cors: true
+
+custom:
+  database:
+    url: mongodb+srv://${ssm:compare-db-username}:${ssm:compare-db-password}@${ssm:compare-db-url}
+  pythonRequirements:
+    dockerizePip: non-linux
+
+plugins:
+  - serverless-python-requirements
+  - serverless-offline-python

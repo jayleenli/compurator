@@ -1,0 +1,51 @@
+{
+    "description" : "Laptop comparison tool for Amazon",
+    "manifest_version" : 2,
+    "name" : "compare-tool",
+    "version" : "1.1",
+    "homepage_url" : "https://github.com/ucsb-cs48-w20/4pm-laptops-comparer/",
+    "icons" : {
+        "48" : "icons/person-48.png"
+    },
+
+    "permissions" : [
+        "tabs", "https://amazon.com/*", "storage", "https://*.amazon.com/*", "https://compare.richert.wang/*"
+    ],
+
+    "background" : {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "browser_action" : {
+        "default_title_icon" : "icons/person-32.png",
+        "default_title" : "Save Laptop",
+        "default_popup" : "popup/index.html"
+    },
+
+    "content_scripts" : [{
+        "js" : [
+            "konami/inject_richert.js"
+        ],
+        "matches" : [
+            "https://*.amazon.com/*",
+            "https://amazon.com/*"
+        ]
+    },
+    {
+        "js" : [
+            "jwt/inject_jwt.js"
+        ],
+        "matches" : [
+            "https://compare.richert.wang/*"
+        ]
+    }],
+
+    "web_accessible_resources": [
+        "konami/richert.js",
+        "konami/index.html",
+        "popup/richert-no-bg.png",
+        "jwt/jwt.js"
+    ]
+}

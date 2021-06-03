@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" type="text/css" href="loading.css"/>
+    </head>
+    <body>
+        <div id="content" class="visible">
+            <div id="authorize" class="visible">
+                <div id="authorize-header">
+                    <span id="authorize-text">Let's get <b><a href="https://compare.richert.wang">logged in!</a></b></span>
+                </div>
+                <div id="authorize-image-container">
+                    <img src="richert-no-bg.png" id="authorize-image" />
+                </div>
+            </div>
+            <div id="loading" class="hidden">
+                <div id="loading-icon">
+                    <div class="lds-facebook">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="workspace" class="hidden">
+                <div class="richert-select">
+                    <select id="richert-select">
+                        <option value="0">Select workspace...</option>
+                    </select>
+                </div>
+            </div>
+            <div id="save" class="hidden">
+                <center>
+                    <span id="text">Save it!</span>
+                    <br />
+                    <img src="icon.png" class="richert" width="200" height="200" id="richert" />
+                    <a href="https://compare.richert.wang/">Access Web App!</a>
+                </center>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+{
+    "https://www.amazon.com/Acer-Chromebook-CP713-1WN-53NF-Convertible-Touchscreen/dp/B07GD4CMDH":
+        {
+            "title": "Acer Chromebook Spin 13 CP713-1WN-53NF 2-in-1 Convertible",
+            "price": "$643.96",
+            "laptop_model": "CP713-1WN-53NF"
+        },
+
+    "https://www.amazon.com/ASUS-VivoBook-i3-8145U-Windows-F512FA-AB34/dp/B07RK5M35T":
+        {
+            "title": "ASUS VivoBook 15 Thin and Light Laptop",
+            "price": "$379.96",
+            "laptop_model": "F512FA-AB34"
+        },
+    "https://www.amazon.com/ASUS-Ultra-Thin-Processor-L203MA-DS04-Microsoft/dp/B07N6S4SY1":
+        {
+            "title": "ASUS VivoBook L203MA Ultra-Thin Laptop, 11.6'' HD",
+            "price": "$209.89",
+            "savings": "$40.10",
+            "laptop_model": "L203MA-DS04"
+        },
+    "https://www.amazon.com/Dell-InfinityEdge-Touch-Intel-XPS7390-7681SLV-PUS/dp/B07XYTC8WG":
+        {
+            "title": "Dell XPS 13",
+            "price": "$1751.99",
+            "laptop_model": "XPS7390-7681SLV-PUS"
+        },
+    "https://www.amazon.com/Microsoft-Surface-Platinum-LQL-00001-Windows/dp/B07HZK3SLP":
+        {
+            "title": "Microsoft  Surface Laptop 2 (Intel Core i5, 8GB RAM, 128GB)",
+            "price": "$799.99",
+            "savings": "$199.01",
+            "laptop_model": "LQL-00001"
+        },
+    "https://www.amazon.com/Samsung-Chromebook-11-6-64GB-XE500C13-K06US/dp/B07D4Z8FY7":
+        {
+            "title": "Samsung Chromebook 3",
+            "price": "$205.65",
+            "savings": "74.34",
+            "laptop_model": "XE500C13-K06US"
+        },
+    "https://www.amazon.com/Dell-11-6-inch-Chromebook-Intel-N3060/dp/B07HLD2VQH":
+        {
+            "title": "Dell Inspiron C3181-C871BLK-PUS Laptop",
+            "price": "$155.14",
+            "laptop_model": "C3181-C871BLK-PUS"
+        },
+        "https://www.amazon.com/HP-Dual-Core-Processor-Bluetooth-14-cb161wm/dp/B07YXSLFDH":
+        {
+            "title": "HP Stream 14'' HD(1366x768) Display",
+            "price": "$159.99",
+            "ASIN": "B07YXSLFDH"
+        },
+    "https://www.amazon.com/Pavilion-Slimline-Ne499Av-Aba_1419243-Desktop/dp/B00HAQYRY2":
+        {
+            "title": "2020 HP Pavilion 17.3 Inch Touchscreen Laptop",
+            "price": "$859.00",
+            "ASIN": "B00HAQYRY2"
+        },
+    "https://www.amazon.com/Lenovo-Quad-Core-i5-8265U-Graphics-Bluetooth/dp/B07Y5NM7VV":
+        {
+            "title": "2020 Lenovo IdeaPad S340 15.6 Inch Laptop",
+            "price": "$703.39",
+            "ASIN": "B07Y5NM7VV"
+        },
+    "https://www.amazon.com/Apple-MacBook-13-inch-256GB-Storage/dp/B07S1YPSGT":
+        {
+            "title": "New Apple MacBook Pro (13-inch, 8GB RAM, 256GB Storage)",
+            "price": "$1599.99",
+            "savings": "$199.01",
+            "laptop_model": "---"
+        },
+    "https://www.amazon.com/dp/B07V1PHKPM/ref=fs_a_mb_1":
+        {
+            "title": "New Apple MacBook Air (13-inch, 8GB RAM, 128GB Storage)",
+            "price": "$949.00",
+            "savings": "$150.00",
+            "laptop_model": "---"
+        }
+}
