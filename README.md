@@ -1,5 +1,8 @@
 # Compurator
 
+*This project has been revived from the dead as the code was previously thought to be lost but has been found.*  
+[Presentation Link](https://docs.google.com/presentation/d/1a7cQJGmBLsDPVT84QynugAihEbYEEQAerVd6WkZFkbo/edit?usp=sharing)
+
 ## Project summary
 
 ### A comparison tool that allows you the convenience of adding products you like on the go with a browser extension and the clarity of comparing and contrasting them side-by-side in your online dashboard, making indecisive online shopping a more enjoyable experience.
